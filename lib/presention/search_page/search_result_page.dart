@@ -1,6 +1,4 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:netflix_movieapp/application/search/search_bloc.dart';
@@ -15,7 +13,7 @@ class SearchResultWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        SearchTextTitle(title: 'Movies & TV'),
+        const SearchTextTitle(title: 'Movies & TV'),
         sboxH,
         Expanded(
           child: BlocBuilder<SearchBloc, SearchState>(
